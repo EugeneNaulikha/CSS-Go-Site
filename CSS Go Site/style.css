@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+.container
+{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0.03),transparent),url(images/background.png);
+  background-size: contain;
+  background-position: center;
+  padding: 0 8%;
+  position: relative;
+}
+nav
+{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+
+}
+.logo {
+    float:left;
+    width:155px;
+    height:150px;
+    background-position: 50% 50%;
+    Background-repeat: no-repeat;
+    background-size: contain;
+}
+.cart-icon {
+    width: 30px;
+    cursor: pointer;
+    
+}
+nav ul
+{
+    flex:1;
+    text-align: right;
+    padding-right: 300px;
+
+}
+
+nav ul li 
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position:relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:#fff;
+    transition: width 0.3s ease-in-out;
+}
+nav ul li a:hover::after{
+    width: 50px;
+}
+.text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+   
+
+}
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+}
+.text-box h1{
+    font-size: 90px;
+    line-height:70px;
+    margin-left: -10px;
+     /*Letter Spacing*/
+     letter-spacing: -4px;
+}
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.text-box .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+}
+.rotate-on-hover {
+    display: inline-block;
+    transition: transform 0.5s; /* Add a transition effect to the rotation */
+}
+  
+.rotate-on-hover:hover {
+    transform: rotate(180deg); /* Rotate the element 180 degrees on hover */
+}
+  
+.text-box .row a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+}
+.text-box .social-icons{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+.text-box .social-icons img{
+    width: 25px;
+    display: block;
+    margin: 25% 5px;
+   
+}
+.social-icons {
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+   
+}
+.social-icons img {
+    width: 25px; /* adjust to the desired size */
+    padding:5px;
+    padding-bottom: 40px;
+    
+}
+
